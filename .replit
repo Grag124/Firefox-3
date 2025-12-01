@@ -4,3 +4,8 @@ run="python main.py"
 
 [agent]
 expertMode = true
+
+[[ports]]
+localPort = 6080
+externalPort = 6080
+exposeLocalhost = true
