@@ -1,0 +1,6 @@
+Xlib:  extension "DPMS" missing on display ":99".
+
+The VNC desktop is:      codespaces-b6708e:0
+PORT=5900
+caught XIO error:
+extra[1] signal: 15

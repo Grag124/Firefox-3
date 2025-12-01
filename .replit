@@ -1,64 +1,17 @@
-language="bash"
-audio=true
-run="bash Firefox2/start-gui.sh"
-modules = ["python-3.11"]
+# This repository now targets GitHub Codespaces and uses the container in `.devcontainer/`.
+#
+# The original Replit .replit configuration used by earlier versions of this repo
+# has been intentionally disabled and replaced by Codespaces-friendly setup. If
+# you'd like to run this project in Replit you may re-create an appropriate
+# `replit.nix` or `.replit` configuration, but the recommended workflow is:
+#
+# 1) Open this repository in GitHub Codespaces (or rebuild the `.devcontainer`).
+# 2) Rebuild the devcontainer so the required packages are installed (xvfb,
+#    x11vnc, websockify, novnc, fluxbox, libgtk-3-0, etc.).
+# 3) Run `bash scripts/codespace-run.sh` or use the devcontainer postStart action
+#    which runs the one-shot setup automatically.
 
-[agent]
-expertMode = true
+# This file has been preserved (disabled) so Replit users can use it as a
+# starting point if they want to adapt the repository back to Replit. It is
+# safe to delete this file from the repository entirely if you do not need it.
 
-[[ports]]
-localPort = 5000
-externalPort = 80
-
-[[ports]]
-localPort = 6080
-externalPort = 80
-
-[[ports]]
-localPort = 5900
-externalPort = 5900
-
-[[ports]]
-localPort = 45013
-externalPort = 3000
-
-[workflows]
-runButton = "Project"
-
-[[workflows.workflow]]
-name = "Start noVNC GUI"
-author = 18374188
-mode = "sequential"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "chmod +x Firefox2/start-gui.sh"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "./Firefox2/start-gui.sh"
-
-[[workflows.workflow]]
-name = "Project"
-mode = "parallel"
-author = "agent"
-
-[[workflows.workflow.tasks]]
-task = "workflow.run"
-args = "Firefox Desktop"
-
-[[workflows.workflow]]
-name = "Firefox Desktop"
-author = "agent"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "cd Firefox2 && ./start-gui.sh"
-waitForPort = 5000
-
-[workflows.workflow.metadata]
-outputType = "webview"
-
-[nix]
-channel = "stable-25_05"
-packages = ["curl", "fluxbox", "novnc", "x11vnc", "websockify", "xterm", "xorg.xorgserver", "bzip2", "xvfb-run", "gtk3", "glib", "pango", "cairo", "gdk-pixbuf", "atk", "dbus-glib", "alsa-lib", "xorg.libXt", "xorg.libXrender", "xorg.libXext", "xorg.libXcomposite", "xorg.libXdamage", "xorg.libXcursor", "xorg.libXi", "xorg.libXrandr", "xorg.libxcb", "imagemagick"]

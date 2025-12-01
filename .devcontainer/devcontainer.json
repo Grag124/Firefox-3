@@ -1,0 +1,16 @@
+{
+  "name": "Firefox noVNC Devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": { "VARIANT": "22.04" }
+  },
+  "features": {},
+  "forwardPorts": [6080, 5900],
+  "postCreateCommand": "chmod +x scripts/*.sh Firefox2/start-gui.sh || true",
+  "postStartCommand": "echo 'Devcontainer started. Running full setup (install Firefox, prefs, geckodriver, start GUI)...' && bash scripts/codespace-run.sh || true",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode-remote.remote-containers"]
+    }
+  }
+}

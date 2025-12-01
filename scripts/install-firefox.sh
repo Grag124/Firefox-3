@@ -33,7 +33,21 @@ DOWNLOAD_URL="https://download.mozilla.org/?product=${PRODUCT}&os=linux64&lang=e
 
 pushd "$TMPDIR" >/dev/null
 echo "Downloading latest Firefox from $DOWNLOAD_URL"
-curl -L --fail -o firefox.tar "${DOWNLOAD_URL}"
+# retry up to 3 times for network hiccups
+RETRY=0
+until [ $RETRY -ge 3 ]
+do
+  if curl -L --fail -o firefox.tar "${DOWNLOAD_URL}"; then
+    break
+  fi
+  RETRY=$((RETRY+1))
+  echo "Download failed (attempt $RETRY) — retrying in 2s..."
+  sleep 2
+done
+if [ $RETRY -ge 3 ]; then
+  echo "Failed to download Firefox after multiple attempts (url: $DOWNLOAD_URL)" >&2
+  exit 22
+fi
 
 echo "Trying to extract archive (auto-detecting format)..."
 # Try common compression formats until one works

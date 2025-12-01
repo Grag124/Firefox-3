@@ -1,0 +1,3 @@
+XPCOMGlueLoad error for file /workspaces/Firefox-3/Firefox2/firefox/libmozgtk.so:
+libgtk-3.so.0: cannot open shared object file: No such file or directory
+Couldn't load XPCOM.

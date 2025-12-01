@@ -4,7 +4,7 @@ set -euo pipefail
 # start-novnc.sh
 # Usage: start-novnc.sh <profile-dir> <firefox-dir> [-- extra firefox args]
 # Starts Xvfb, a simple window manager (fluxbox if available), x11vnc, and a websockify/noVNC proxy
-# then launches Firefox in the created display. This is intended for use in Replit or similar containers.
+# then launches Firefox in the created display. This is intended for use in Codespaces, containers, or local development environments.
 
 PROFILE_DIR="$1"
 FIREFOX_DIR="$2"
@@ -71,10 +71,34 @@ fi
 
 if [ ${#MISSING[@]} -ne 0 ]; then
   echo "ERROR: Missing required commands: ${MISSING[*]}" >&2
-  echo "If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick" >&2
-  echo "Example .replit entry: packages = [\"websockify\" \"x11vnc\" \"novnc\" \"fluxbox\" \"imagemagick\"]" >&2
-  echo "If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh" >&2
-  exit 3
+  # Attempt automatic fix when possible
+  if command -v sudo >/dev/null 2>&1 && [ -x "$ROOT_DIR/scripts/fix-env.sh" ]; then
+    echo "Attempting to install missing packages using sudo scripts/fix-env.sh" >&2
+    if sudo bash "$ROOT_DIR/scripts/fix-env.sh"; then
+      # re-check commands
+      MISSING=()
+      for cmd in Xvfb x11vnc fluxbox websockify; do
+        if ! command -v "$cmd" >/dev/null 2>&1; then
+          MISSING+=("$cmd")
+        fi
+      done
+
+      if [ ${#MISSING[@]} -eq 0 ]; then
+        echo "Auto-install succeeded — continuing startup"
+      else
+        echo "Auto-install ran, but these commands are still missing: ${MISSING[*]}" >&2
+        echo "Please install them manually or use the Codespaces devcontainer (.devcontainer/Dockerfile)." >&2
+        exit 3
+      fi
+    else
+      echo "Auto-install failed — please install required packages manually or use the Codespaces devcontainer." >&2
+      exit 3
+    fi
+  else
+    echo "Required packages are missing: ${MISSING[*]}." >&2
+    echo "If you're in Codespaces ensure the devcontainer was built; otherwise run: sudo bash scripts/fix-env.sh" >&2
+    exit 3
+  fi
 fi
 
 echo "Starting virtual X display on $DISPLAY (log: $XVFB_LOG)"
@@ -99,10 +123,23 @@ fi
 sleep 0.5
 
 # Start x11vnc (serves the X display on $RF_PORT)
+VNC_PASS_FILE="$LOG_DIR/.vncpass"
+VNC_PASS="${VNC_PASSWORD:-}"
+
+if [ -z "$VNC_PASS" ]; then
+  # generate a short random password if none provided
+  VNC_PASS=$(tr -dc 'A-Za-z0-9' </dev/urandom | head -c 12 || echo "firefoxvnc")
+  echo "Generated VNC password (set VNC_PASSWORD env var to override): $VNC_PASS"
+fi
+
+echo "$VNC_PASS" > "$VNC_PASS_FILE"
+chmod 600 "$VNC_PASS_FILE"
+
 if command -v x11vnc >/dev/null 2>&1; then
   echo "Starting x11vnc on port $RF_PORT"
   # -forever keeps it running, -shared allows multiple clients, -noxdamage might help stability
-  x11vnc -display "$DISPLAY" -forever -shared -noxdamage -rfbport "$RF_PORT" -quiet >"$X11VNC_LOG" 2>&1 &
+  # use -rfbauth with the password file so VNC clients must authenticate
+  x11vnc -display "$DISPLAY" -forever -shared -noxdamage -rfbport "$RF_PORT" -rfbauth "$VNC_PASS_FILE" -quiet >"$X11VNC_LOG" 2>&1 &
   TMP_PIDS+=("$!")
 else
   echo "x11vnc not found — you need x11vnc installed for noVNC access" >&2

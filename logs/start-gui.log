@@ -29,3 +29,604 @@ If you are running in Replit, add these packages to your .replit nix packages: w
 Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
 If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
 Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 16964
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 16964
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 25990
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 16964
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 16964
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 25990
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 26563
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 16964
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 16964
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 25990
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 26563
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 26863
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+noVNC process PID: 16964
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 16964
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 25990
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 26563
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 26863
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 27197
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 16964
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 25990
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 26563
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 26863
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 27197
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 33126
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+Starting virtual X display on :99 (log: /workspaces/Firefox-3/logs/xvfb.log)
+Starting fluxbox
+Starting x11vnc on port 5900
+Starting websockify (websocket proxy)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 16964
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 25990
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 26563
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 26863
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 27197
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 33126
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+Starting virtual X display on :99 (log: /workspaces/Firefox-3/logs/xvfb.log)
+Starting fluxbox
+Starting x11vnc on port 5900
+Starting websockify (websocket proxy)
+Launching Firefox in display :99
+Started Firefox (PID 33184). noVNC should be available on port 6080 and RFB on 5900 if websockify/x11vnc started successfully.
+Services listening on ports (checked):
+LISTEN 0      32           0.0.0.0:5900       0.0.0.0:*    users:(("x11vnc",pid=33166,fd=9)) 
+LISTEN 0      32              [::]:5900          [::]:*    users:(("x11vnc",pid=33166,fd=10))
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 33681
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+Starting virtual X display on :99 (log: /workspaces/Firefox-3/logs/xvfb.log)
+Starting fluxbox
+Starting x11vnc on port 5900
+Starting websockify (websocket proxy)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 16964
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 25990
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 26563
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 26863
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 27197
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If running locally, install these packages (or use the provided devcontainer): websockify x11vnc novnc fluxbox imagemagick
+You can run: sudo bash scripts/fix-env.sh (supports apt/dnf/pacman) or use the Codespaces devcontainer (.devcontainer/Dockerfile).
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 33126
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+Starting virtual X display on :99 (log: /workspaces/Firefox-3/logs/xvfb.log)
+Starting fluxbox
+Starting x11vnc on port 5900
+Starting websockify (websocket proxy)
+Launching Firefox in display :99
+Started Firefox (PID 33184). noVNC should be available on port 6080 and RFB on 5900 if websockify/x11vnc started successfully.
+Services listening on ports (checked):
+LISTEN 0      32           0.0.0.0:5900       0.0.0.0:*    users:(("x11vnc",pid=33166,fd=9)) 
+LISTEN 0      32              [::]:5900          [::]:*    users:(("x11vnc",pid=33166,fd=10))
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+noVNC process PID: 33681
+noVNC web UI should be reachable at http://<your-repl-host>:6080/vnc.html
+RFB/VNC clients can connect to <your-repl-host>:5900 (password protected)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+Starting virtual X display on :99 (log: /workspaces/Firefox-3/logs/xvfb.log)
+Starting fluxbox
+Starting x11vnc on port 5900
+Starting websockify (websocket proxy)
+Launching Firefox in display :99
+Started Firefox (PID 33742). noVNC should be available on port 6080 and RFB on 5900 if websockify/x11vnc started successfully.
+Services listening on ports (checked):
+LISTEN 0      32           0.0.0.0:5900       0.0.0.0:*    users:(("x11vnc",pid=33729,fd=9)) 
+LISTEN 0      32              [::]:5900          [::]:*    users:(("x11vnc",pid=33729,fd=10))
+Shutting down noVNC environment...

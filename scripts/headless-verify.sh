@@ -4,6 +4,7 @@ set -euo pipefail
 # Headless verify orchestration: ensures geckodriver & selenium are present then runs verify_about_support.py
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 GECKO="$ROOT_DIR/scripts/bin/geckodriver"
+export PATH="$ROOT_DIR/scripts/bin:$PATH"
 
 if [ ! -x "$GECKO" ]; then
   echo "geckodriver not found — installing into scripts/bin"

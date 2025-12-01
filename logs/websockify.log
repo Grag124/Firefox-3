@@ -1,0 +1,7 @@
+Usage: 
+    websockify [options] [source_addr:]source_port target_addr:target_port
+    websockify [options] --token-plugin=CLASS [source_addr:]source_port
+    websockify [options] --unix-target=FILE [source_addr:]source_port
+    websockify [options] [source_addr:]source_port -- WRAP_COMMAND_LINE
+
+websockify: error: no such option: --bind-tcp

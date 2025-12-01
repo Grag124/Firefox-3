@@ -35,5 +35,5 @@ if command -v pacman >/dev/null 2>&1; then
   exit 0
 fi
 
-echo "No supported package manager found. If you are running on Replit, add these packages to the .replit file's nix.packages array and rebuild the environment: websockify x11vnc novnc fluxbox imagemagick" >&2
+echo "No supported package manager found. If you're using GitHub Codespaces, the repository includes a devcontainer which installs the required packages. Otherwise, install these packages manually: websockify x11vnc novnc fluxbox imagemagick" >&2
 exit 3
