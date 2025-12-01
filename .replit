@@ -1,16 +1,25 @@
 language="python"
 audio=true
 run="python main.py"
+modules = ["python-3.11"]
 
 [agent]
 expertMode = true
 
 [[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
 localPort = 6080
 externalPort = 80
 
+[[ports]]
+localPort = 45013
+externalPort = 3000
+
 [workflows]
-runButton = "Start noVNC GUI"
+runButton = "Project"
 
 [[workflows.workflow]]
 name = "Start noVNC GUI"
@@ -24,3 +33,28 @@ args = "chmod +x Firefox2/start-gui.sh"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "./Firefox2/start-gui.sh"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Firefox Desktop"
+
+[[workflows.workflow]]
+name = "Firefox Desktop"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd Firefox2 && ./start-gui.sh"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[nix]
+channel = "stable-25_05"
+packages = ["curl", "fluxbox", "novnc", "x11vnc", "xterm", "xorg.xorgserver", "bzip2", "xvfb-run", "gtk3", "glib", "pango", "cairo", "gdk-pixbuf", "atk", "dbus-glib", "alsa-lib", "xorg.libXt", "xorg.libXrender", "xorg.libXext", "xorg.libXcomposite", "xorg.libXdamage", "xorg.libXcursor", "xorg.libXi", "xorg.libXrandr", "xorg.libxcb"]
