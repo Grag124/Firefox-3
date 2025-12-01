@@ -7,5 +7,20 @@ expertMode = true
 
 [[ports]]
 localPort = 6080
-externalPort = 6080
-exposeLocalhost = true
+externalPort = 80
+
+[workflows]
+runButton = "Start noVNC GUI"
+
+[[workflows.workflow]]
+name = "Start noVNC GUI"
+author = 18374188
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "chmod +x Firefox2/start-gui.sh"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./Firefox2/start-gui.sh"
