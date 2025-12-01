@@ -1,0 +1,25 @@
++ set -euo pipefail
++++ dirname scripts/run-optimized.sh
+++ cd scripts/..
+++ pwd
++ ROOT_DIR=/workspaces/Firefox-3
++ FIREFOX_BIN=/workspaces/Firefox-3/Firefox2/firefox/firefox
++ PROFILE_DIR=/workspaces/Firefox-3/firefox-profile
++ '[' '!' -x /workspaces/Firefox-3/Firefox2/firefox/firefox ']'
++ mkdir -p /workspaces/Firefox-3/firefox-profile
++ export MOZ_WEBRENDER=1
++ MOZ_WEBRENDER=1
++ export MOZ_ENABLE_WAYLAND=1
++ MOZ_ENABLE_WAYLAND=1
++ export MOZ_ACCELERATED=1
++ MOZ_ACCELERATED=1
++ export MOZ_USE_X11=0
++ MOZ_USE_X11=0
++ export MOZ_X11_EGL=1
++ MOZ_X11_EGL=1
++ echo 'Starting optimized Firefox (binary: /workspaces/Firefox-3/Firefox2/firefox/firefox)'
+Starting optimized Firefox (binary: /workspaces/Firefox-3/Firefox2/firefox/firefox)
++ exec /workspaces/Firefox-3/Firefox2/firefox/firefox -no-remote -profile /workspaces/Firefox-3/firefox-profile
+XPCOMGlueLoad error for file /workspaces/Firefox-3/Firefox2/firefox/libmozgtk.so:
+libgtk-3.so.0: cannot open shared object file: No such file or directory
+Couldn't load XPCOM.

@@ -1,0 +1,41 @@
++ set -euo pipefail
++++ dirname Firefox2/start-gui.sh
+++ cd Firefox2/..
+++ pwd
++ ROOT_DIR=/workspaces/Firefox-3
++ FIREFOX_DIR=/workspaces/Firefox-3/firefox
++ PROFILE_DIR=/workspaces/Firefox-3/firefox-profile
++ export MOZ_WEBRENDER=1
++ MOZ_WEBRENDER=1
++ export MOZ_ENABLE_WAYLAND=1
++ MOZ_ENABLE_WAYLAND=1
++ export MOZ_ACCELERATED=1
++ MOZ_ACCELERATED=1
++ export MOZ_USE_X11=0
++ MOZ_USE_X11=0
++ echo 'Starting project Firefox from /workspaces/Firefox-3/firefox'
+Starting project Firefox from /workspaces/Firefox-3/firefox
++ '[' '!' -x /workspaces/Firefox-3/firefox/firefox ']'
++ echo 'Firefox binary not found or not executable — running installer to fetch latest build'
+Firefox binary not found or not executable — running installer to fetch latest build
++ bash /workspaces/Firefox-3/scripts/install-firefox.sh
+Installing Firefox into /workspaces/Firefox-3/Firefox2/firefox
+Downloading latest Firefox from https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   136  100   136    0     0   1968      0 --:--:-- --:--:-- --:--:--  1971
+ 27 76.2M   27 20.7M    0     0  93.9M      0 --:--:-- --:--:-- --:--:-- 93.9M100 76.2M  100 76.2M    0     0   186M      0 --:--:-- --:--:-- --:--:--  296M
+Trying to extract archive (auto-detecting format)...
+Installed Firefox to /workspaces/Firefox-3/Firefox2/firefox
+Run: /workspaces/Firefox-3/Firefox2/firefox/firefox --version to verify
++ echo 'Ensuring profile and preferences exist at /workspaces/Firefox-3/firefox-profile'
+Ensuring profile and preferences exist at /workspaces/Firefox-3/firefox-profile
++ mkdir -p /workspaces/Firefox-3/firefox-profile
++ bash /workspaces/Firefox-3/scripts/apply-prefs.sh /workspaces/Firefox-3/firefox-profile
+Wrote tuned preferences to /workspaces/Firefox-3/firefox-profile/user.js
+Clearing profile caches and removing non-essential extensions (if any)
+Preferences applied and profile cleaned: /workspaces/Firefox-3/firefox-profile
++ echo 'Launching Firefox...'
+Launching Firefox...
++ /workspaces/Firefox-3/firefox/firefox -no-remote -profile /workspaces/Firefox-3/firefox-profile
+Firefox2/start-gui.sh: line 29: /workspaces/Firefox-3/firefox/firefox: No such file or directory

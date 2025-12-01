@@ -1,0 +1,39 @@
++ set -euo pipefail
++++ dirname Firefox2/start-gui.sh
+++ cd Firefox2/..
+++ pwd
++ ROOT_DIR=/workspaces/Firefox-3
++ FIREFOX_DIR=/workspaces/Firefox-3/Firefox2/firefox
++ PROFILE_DIR=/workspaces/Firefox-3/firefox-profile
++ export MOZ_WEBRENDER=1
++ MOZ_WEBRENDER=1
++ export MOZ_ENABLE_WAYLAND=1
++ MOZ_ENABLE_WAYLAND=1
++ export MOZ_ACCELERATED=1
++ MOZ_ACCELERATED=1
++ export MOZ_USE_X11=0
++ MOZ_USE_X11=0
++ echo 'Starting project Firefox from /workspaces/Firefox-3/Firefox2/firefox'
+Starting project Firefox from /workspaces/Firefox-3/Firefox2/firefox
++ '[' '!' -x /workspaces/Firefox-3/Firefox2/firefox/firefox ']'
++ echo 'Ensuring profile and preferences exist at /workspaces/Firefox-3/firefox-profile'
+Ensuring profile and preferences exist at /workspaces/Firefox-3/firefox-profile
++ mkdir -p /workspaces/Firefox-3/firefox-profile
++ bash /workspaces/Firefox-3/scripts/apply-prefs.sh /workspaces/Firefox-3/firefox-profile
+Wrote tuned preferences to /workspaces/Firefox-3/firefox-profile/user.js
+Clearing profile caches and removing non-essential extensions (if any)
+Preferences applied and profile cleaned: /workspaces/Firefox-3/firefox-profile
++ echo 'Starting noVNC display and launching Firefox... (logs -> ./logs/start-gui.log)'
+Starting noVNC display and launching Firefox... (logs -> ./logs/start-gui.log)
++ mkdir -p /workspaces/Firefox-3/logs
++ exec
+++ tee -a /workspaces/Firefox-3/logs/start-gui.log
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...

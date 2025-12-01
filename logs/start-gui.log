@@ -1,0 +1,31 @@
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
++ '[' -x /workspaces/Firefox-3/scripts/start-novnc.sh ']'
++ echo 'Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)'
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
++ bash /workspaces/Firefox-3/scripts/start-novnc.sh /workspaces/Firefox-3/firefox-profile /workspaces/Firefox-3/Firefox2/firefox
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+Shutting down noVNC environment...
+Starting noVNC environment (Xvfb, fluxbox, x11vnc, websockify)
+Checking for required commands (Xvfb, x11vnc, websockify or python websockify module, fluxbox/openbox)
+ERROR: Missing required commands: Xvfb x11vnc fluxbox websockify
+If you are running in Replit, add these packages to your .replit nix packages: websockify x11vnc novnc fluxbox imagemagick
+Example .replit entry: packages = ["websockify" "x11vnc" "novnc" "fluxbox" "imagemagick"]
+If you're running locally on Ubuntu/Debian/Fedora/Arch you can try the helper script: sudo bash scripts/fix-env.sh
+Shutting down noVNC environment...

@@ -1,0 +1,78 @@
+name: Verify Firefox install & prefs
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare environment
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y xvfb curl tar bzip2 x11-utils libgtk-3-0 libdbus-glib-1-2 libx11-xcb1 libasound2 libxcomposite1 libxdamage1 libxrandr2 python3-pip x11vnc websockify novnc fluxbox imagemagick
+
+      - name: Make scripts executable
+        run: |
+          chmod +x scripts/*.sh Firefox2/start-gui.sh scripts/verify_about_support.py || true
+
+      - name: Install Firefox (nightly channel)
+        run: |
+          bash scripts/install-firefox.sh nightly
+
+      - name: Apply tuned prefs
+        run: |
+          bash scripts/apply-prefs.sh firefox-profile
+
+      - name: Run optimized launch (Xvfb + noVNC)
+        run: |
+          export DISPLAY=:99
+          # Start noVNC environment and launch Firefox (nightly already installed into Firefox2/firefox by previous step)
+          bash scripts/start-novnc.sh firefox-profile "${{ github.workspace }}/Firefox2/firefox" -- &> run-optimized.log &
+          sleep 5
+          # capture a screenshot from the virtual X display so we can inspect the GUI in artifacts
+          sleep 2 || true
+          if command -v import >/dev/null 2>&1; then
+            import -display :99 -window root /tmp/firefox-screenshot.png || true
+          elif command -v xwd >/dev/null 2>&1; then
+            xwd -root -display :99 -out /tmp/firefox.xwd || true
+            convert /tmp/firefox.xwd /tmp/firefox-screenshot.png || true
+          fi
+          ps aux | grep -i firefox || true
+          tail -n 200 run-optimized.log || true
+
+      - name: Install geckodriver & Selenium + run headless verify
+        run: |
+          bash scripts/install-geckodriver.sh
+          python3 -m pip install --upgrade pip setuptools wheel
+          python3 -m pip install --user selenium
+          Xvfb :99 -screen 0 1920x1080x24 &
+          export DISPLAY=:99
+          set -eo pipefail
+          bash scripts/headless-verify.sh > headless-verify.log 2>&1
+          cat headless-verify.log
+
+      - name: Capture final screenshot (if any)
+        run: |
+          if [ -f /tmp/firefox-screenshot.png ]; then
+            echo "screenshot exists"
+          else
+            echo "attempting to capture final screenshot"
+            if command -v import >/dev/null 2>&1; then
+              import -display :99 -window root /tmp/firefox-screenshot.png || true
+            fi
+          fi
+
+      - name: Upload logs
+        uses: actions/upload-artifact@v4
+        with:
+          name: firefox-verify-logs
+          path: |
+            run-optimized.log
+            headless-verify.log
+            /tmp/firefox-screenshot.png

@@ -1,6 +1,6 @@
-language="python"
+language="bash"
 audio=true
-run="python main.py"
+run="bash Firefox2/start-gui.sh"
 modules = ["python-3.11"]
 
 [agent]
@@ -13,6 +13,10 @@ externalPort = 80
 [[ports]]
 localPort = 6080
 externalPort = 80
+
+[[ports]]
+localPort = 5900
+externalPort = 5900
 
 [[ports]]
 localPort = 45013
@@ -57,4 +61,4 @@ outputType = "webview"
 
 [nix]
 channel = "stable-25_05"
-packages = ["curl", "fluxbox", "novnc", "x11vnc", "xterm", "xorg.xorgserver", "bzip2", "xvfb-run", "gtk3", "glib", "pango", "cairo", "gdk-pixbuf", "atk", "dbus-glib", "alsa-lib", "xorg.libXt", "xorg.libXrender", "xorg.libXext", "xorg.libXcomposite", "xorg.libXdamage", "xorg.libXcursor", "xorg.libXi", "xorg.libXrandr", "xorg.libxcb"]
+packages = ["curl", "fluxbox", "novnc", "x11vnc", "websockify", "xterm", "xorg.xorgserver", "bzip2", "xvfb-run", "gtk3", "glib", "pango", "cairo", "gdk-pixbuf", "atk", "dbus-glib", "alsa-lib", "xorg.libXt", "xorg.libXrender", "xorg.libXext", "xorg.libXcomposite", "xorg.libXdamage", "xorg.libXcursor", "xorg.libXi", "xorg.libXrandr", "xorg.libxcb", "imagemagick"]
