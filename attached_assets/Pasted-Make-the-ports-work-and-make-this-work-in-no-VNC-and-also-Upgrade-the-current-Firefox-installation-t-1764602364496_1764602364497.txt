@@ -1,0 +1,33 @@
+Make the ports work and make this work in no VNC and also Upgrade the current Firefox installation to the latest stable release for Linux, and ensure it replaces the old version to benefit from the newest performance and WebRender optimizations."
+
+Here is a breakdown of the technical steps the agent will need to follow (which you can include for a more precise instruction):
+
+Remove the Old Version (If Necessary)
+The agent should first identify and uninstall the currently running version (likely the firefox-esr or a similarly packaged version).
+
+Download the Latest Stable Release
+The agent will need to download the official, up-to-date Linux binary from Mozilla's website.
+
+Extract and Configure
+The agent must extract the downloaded files into a suitable location (like /opt/firefox or a local bin directory) and ensure that the command used to launch the browser in your Replit project's configuration file (like the .replit file) is updated to point to this new, faster executable.
+
+Verification
+The agent should then launch the new Firefox version and verify the installation by checking the "About Firefox" menu to confirm it shows a recent version number (e.g., Firefox 145.0 instead of a much older 115.x ESR version)."I need to maximize the performance of the Firefox browser project for web games and high workload websites. Execute the following configuration changes and optimizations:
+
+Firefox about:config Tweaks
+Apply these specific settings to enable maximum parallelism and graphics acceleration:
+
+Set network.http.max-persistent-connections-per-server to 8.
+
+Force GPU acceleration by setting gfx.webrender.all to true.
+
+Increase content process count by setting dom.ipc.processCount to 4.
+
+Disable disk caching to reduce I/O by setting browser.cache.disk.enable to false.
+
+Replit Resource Optimization
+Remove or disable all non-essential Firefox add-ons and extensions.
+
+Clear the current Firefox cache and history once to ensure a clean start.
+
+Check the Replit environment to ensure no unnecessary background services or processes are running that would consume resources needed by Firefox."
